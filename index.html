@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="ManutCar: um prontuário digital veicular para organizar manutenções, serviços e o histórico do seu veículo.">
+    <title>ManutCar — O histórico do seu veículo, em um só lugar</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="ManutCar — início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M7 21.5V12a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v9.5M7 17h18M10 10l1.5-3h9L22 10M9 22v2m14-2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="11" cy="18.5" r="1" fill="currentColor"/>
+              <circle cx="21" cy="18.5" r="1" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">manut<span>car</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu" hidden>
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="#funcionalidades">O que é</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+
+        <a class="button button-small header-cta" href="#roadmap">
+          Acompanhe o projeto
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero section-space" id="inicio" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Cuidado automotivo, com mais clareza</span>
+            <h1 id="hero-title">A história do seu carro merece <span>um lugar só dela.</span></h1>
+            <p class="hero-description">O ManutCar é um prontuário digital veicular pensado para reunir manutenções, serviços e informações importantes do seu veículo.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#funcionalidades">
+                Conheça a proposta
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="text-link" href="#como-funciona">Entenda como funciona</a>
+            </div>
+            <div class="hero-note">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 2.5 3.5 5v4.4c0 4 2.8 6.8 6.5 8.1 3.7-1.3 6.5-4.1 6.5-8.1V5L10 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                <path d="m7.5 10 1.7 1.7 3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Um projeto para cuidar melhor do histórico do seu veículo.
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+            <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+            <div class="dashboard" aria-label="Prévia ilustrativa de um prontuário veicular">
+              <div class="dashboard-topbar">
+                <div class="dashboard-brand">
+                  <span class="mini-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M5 16v-6a1.5 1.5 0 0 1 1.5-1.5h11A1.5 1.5 0 0 1 19 10v6M5 13h14M7.5 8.5 9 6h6l1.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span>manutcar</span>
+                </div>
+                <span class="dashboard-label">VISÃO GERAL</span>
+                <span class="avatar" aria-hidden="true">M</span>
+              </div>
+              <div class="dashboard-body">
+                <div class="dashboard-heading">
+                  <div>
+                    <p class="dashboard-kicker">DEMONSTRAÇÃO ILUSTRATIVA</p>
+                    <h2>Análises do veículo</h2>
+                  </div>
+                  <span class="vehicle-tag">Exemplo</span>
+                </div>
+
+                <div class="analytics-summary" role="group" aria-label="Indicadores ilustrativos">
+                  <article class="summary-metric">
+                    <span>Gastos registrados</span>
+                    <strong>R$ 2.480</strong>
+                    <small>Valores fictícios</small>
+                  </article>
+                  <article class="summary-metric">
+                    <span>Serviços no histórico</span>
+                    <strong>08</strong>
+                    <small>Registros de exemplo</small>
+                  </article>
+                </div>
+
+                <div class="analytics-grid">
+                  <article class="analytics-card">
+                    <div class="chart-heading">
+                      <div><h3>Gastos por mês</h3><span>Comparativo ilustrativo</span></div>
+                      <span class="chart-period">6 meses</span>
+                    </div>
+                    <div class="bar-chart" role="img" aria-label="Gráfico ilustrativo de gastos mensais fictícios, de janeiro a junho.">
+                      <span class="chart-bar-column"><span class="chart-bar bar-jan"></span><span>JAN</span></span>
+                      <span class="chart-bar-column"><span class="chart-bar bar-fev"></span><span>FEV</span></span>
+                      <span class="chart-bar-column"><span class="chart-bar bar-mar"></span><span>MAR</span></span>
+                      <span class="chart-bar-column"><span class="chart-bar bar-abr"></span><span>ABR</span></span>
+                      <span class="chart-bar-column"><span class="chart-bar bar-mai"></span><span>MAI</span></span>
+                      <span class="chart-bar-column"><span class="chart-bar bar-jun"></span><span>JUN</span></span>
+                    </div>
+                  </article>
+                  <article class="analytics-card category-card">
+                    <div class="chart-heading">
+                      <div><h3>Tipos de serviço</h3><span>Distribuição fictícia</span></div>
+                    </div>
+                    <div class="category-content">
+                      <div class="donut-chart" role="img" aria-label="Distribuição fictícia dos serviços: 58% preventivos, 25% corretivos e 17% outros.">
+                        <span>08<small>registros</small></span>
+                      </div>
+                      <ul class="chart-legend">
+                        <li><span><i class="legend-dot legend-preventive"></i>Preventiva</span><strong>58%</strong></li>
+                        <li><span><i class="legend-dot legend-corrective"></i>Corretiva</span><strong>25%</strong></li>
+                        <li><span><i class="legend-dot legend-other"></i>Outros</span><strong>17%</strong></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <p class="dashboard-disclaimer">Visual demonstrativo com dados fictícios. Produto e análises ainda em concepção.</p>
+              </div>
+            </div>
+            <div class="floating-note" aria-hidden="true">
+              <span class="floating-note-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M10 3v7l4 2m3-2a7 7 0 1 1-2.05-4.95" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span><strong>Mais contexto</strong><small>para cada serviço</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Propósito do ManutCar">
+        <div class="container trust-inner">
+          <span>Um prontuário pensado para acompanhar a vida do veículo.</span>
+          <span class="trust-divider" aria-hidden="true"></span>
+          <span class="trust-detail"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5 3.5 5v4.4c0 4 2.8 6.8 6.5 8.1 3.7-1.3 6.5-4.1 6.5-8.1V5L10 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="m7.5 10 1.7 1.7 3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Informação organizada, decisão mais consciente.</span>
+        </div>
+      </section>
+
+      <section class="section-space features-section" id="funcionalidades" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">O que é o ManutCar</span>
+            <h2 id="features-title">Cuidar do carro fica mais simples quando o histórico faz sentido.</h2>
+            <p>Uma proposta para reunir o que importa e tornar o cuidado com o veículo mais organizado, do dia a dia à revenda.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.5h7l4 4v13H7a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 3.5v4h4m-9 4h6m-6 4h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span class="feature-number">01</span>
+              <h3>Prontuário digital veicular</h3>
+              <p>Uma referência para reunir as informações importantes da trajetória do seu veículo.</p>
+              <span class="feature-rule" aria-hidden="true"></span>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3m-15.36-6.36 2.12 2.12m10.48 10.48 2.12 2.12m0-14.72-2.12 2.12M7.88 16.12l-2.12 2.12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><path d="m10 12 1.3 1.3L14 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="feature-number">02</span>
+              <h3>Manutenção preventiva</h3>
+              <p>Mais organização para acompanhar os cuidados previstos para o seu carro.</p>
+              <span class="feature-rule" aria-hidden="true"></span>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 5h14v16H5zM8 3v4m8-4v4M5 10h14m-9 4h6m-6 3.5h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="feature-number">03</span>
+              <h3>Histórico de serviços</h3>
+              <p>Organize e compare gastos, serviços e cuidados ao longo do tempo.</p>
+              <span class="feature-rule" aria-hidden="true"></span>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8V4h4l12 12-4 4L4 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.25" stroke="currentColor" stroke-width="1.5"/><path d="M12 14h5m-2.5-2.5v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span class="feature-number">04</span>
+              <h3>Mais contexto na revenda</h3>
+              <p>Um histórico bem cuidado pode ajudar a contar a trajetória do veículo a um futuro comprador.</p>
+              <span class="feature-rule" aria-hidden="true"></span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-space process-section" id="como-funciona" aria-labelledby="process-title">
+        <div class="container process-layout">
+          <div class="process-intro reveal">
+            <span class="eyebrow">Como funciona</span>
+            <h2 id="process-title">Um cuidado contínuo começa com informação bem cuidada.</h2>
+            <p>O ManutCar está sendo pensado para acompanhar a rotina de quem quer cuidar melhor do próprio veículo.</p>
+            <a class="text-link" href="#roadmap">Veja as etapas do projeto <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="process-steps">
+            <article class="process-step reveal">
+              <span class="step-index">01</span>
+              <div><h3>Reúna as informações</h3><p>Tenha os dados do veículo e seus registros de manutenção como ponto de partida.</p></div>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h14v14H5zM8 9h8m-8 4h8m-8 4h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-index">02</span>
+              <div><h3>Registre cada cuidado</h3><p>Organize manutenções preventivas e serviços realizados ao longo do tempo.</p></div>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18m-9-9h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-index">03</span>
+              <div><h3>Consulte seu histórico</h3><p>Use os registros como referência para acompanhar a jornada do veículo.</p></div>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-space roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="container">
+          <div class="roadmap-heading reveal">
+            <div>
+              <span class="eyebrow">Roadmap público</span>
+              <h2 id="roadmap-title">Um projeto em construção, com próximos passos à vista.</h2>
+            </div>
+            <p>O ManutCar está em fase de concepção. Estas são frentes de trabalho do projeto, não funcionalidades já disponíveis.</p>
+          </div>
+          <div class="roadmap-track">
+            <article class="roadmap-item reveal">
+              <span class="roadmap-marker marker-current" aria-hidden="true"></span>
+              <span class="roadmap-status status-current">Em andamento</span>
+              <h3>Conceito e proposta</h3>
+              <p>Definição do propósito do prontuário digital veicular e das necessidades que ele deve atender.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span class="roadmap-marker" aria-hidden="true"></span>
+              <span class="roadmap-status">Próxima etapa</span>
+              <h3>Estrutura da experiência</h3>
+              <p>Planejamento de como as informações do veículo e os registros de serviços podem ser organizados.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span class="roadmap-marker" aria-hidden="true"></span>
+              <span class="roadmap-status">A definir</span>
+              <h3>Validação dos próximos passos</h3>
+              <p>As prioridades seguintes serão definidas conforme a evolução do projeto.</p>
+            </article>
+          </div>
+          <p class="roadmap-note"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M10 9v4m0-6h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> O roadmap pode mudar à medida que o projeto evolui.</p>
+        </div>
+      </section>
+
+      <section class="section-space about-section" id="sobre" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <div class="about-aside reveal">
+            <span class="about-index">MANUT<br>CAR</span>
+            <span class="about-aside-line" aria-hidden="true"></span>
+            <span class="about-aside-caption">Cuidado que acompanha<br>cada caminho.</span>
+          </div>
+          <div class="about-copy reveal">
+            <span class="eyebrow">Sobre o projeto</span>
+            <h2 id="about-title">Um veículo tem uma história. Cuidar dela também importa.</h2>
+            <p class="about-lead">O ManutCar nasce de uma ideia simples: facilitar a organização da vida automotiva.</p>
+            <p>Manutenções e serviços fazem parte da trajetória de todo veículo, mas nem sempre é fácil manter essas informações reunidas. O projeto propõe um prontuário digital para tornar esse histórico mais claro e acessível a quem cuida do carro.</p>
+            <p>Mais do que lembrar o que foi feito, a intenção é ajudar cada pessoa a acompanhar os cuidados do veículo e preservar o contexto da sua jornada.</p>
+            <span class="about-signature">ManutCar <span aria-hidden="true">—</span> prontuário digital veicular</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="cta-title">
+        <div class="container cta-inner">
+          <div class="cta-decoration" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="40" stroke="currentColor"/><circle cx="50" cy="50" r="28" stroke="currentColor"/><path d="M50 10v80M10 50h80" stroke="currentColor"/></svg>
+          </div>
+          <div class="cta-copy">
+            <span class="eyebrow eyebrow-light">Acompanhe a jornada</span>
+            <h2 id="cta-title">O cuidado com o seu carro começa pela história que você guarda.</h2>
+            <p>Conheça a proposta do ManutCar e acompanhe os próximos passos do projeto.</p>
+          </div>
+          <a class="button button-light" href="#roadmap">Ver o roadmap <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-block">
+          <a class="brand brand-footer" href="#inicio" aria-label="ManutCar — voltar ao início">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M7 21.5V12a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v9.5M7 17h18M10 10l1.5-3h9L22 10M9 22v2m14-2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="18.5" r="1" fill="currentColor"/><circle cx="21" cy="18.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="brand-name">manut<span>car</span></span>
+          </a>
+          <p>Um prontuário digital para a história do seu veículo.</p>
+        </div>
+        <div class="footer-links">
+          <div><h2>Explorar</h2><a href="#funcionalidades">O que é</a><a href="#como-funciona">Como funciona</a></div>
+          <div><h2>Projeto</h2><a href="#roadmap">Roadmap</a><a href="#sobre">Sobre o ManutCar</a></div>
+        </div>
+      </div>
+      <section class="share-section" aria-labelledby="share-title">
+        <div class="container share-inner">
+          <div class="share-copy">
+            <span class="eyebrow">Compartilhe</span>
+            <h2 id="share-title">Leve o ManutCar com você.</h2>
+            <p>Aponte a câmera do celular para o QR code e compartilhe o site.</p>
+            <a class="share-link" id="share-link" href="#" hidden>Abrir o link do ManutCar</a>
+          </div>
+          <div class="share-code">
+            <img id="share-qr-code" alt="QR code para acessar e compartilhar o site ManutCar" width="180" height="180" loading="lazy" hidden>
+            <p id="share-error" class="share-error" role="status" hidden>Não foi possível carregar o QR code. Use o link acima para acessar o site.</p>
+          </div>
+        </div>
+      </section>
+      <div class="container footer-bottom">
+        <span>© <span id="current-year">2026</span> ManutCar. Um projeto em construção.</span>
+        <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
